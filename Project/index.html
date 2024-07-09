@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body background="Asset/2.jpeg" >
+    <!--Navbar-->
+    <header>
+       <h1>Javascript CRUD Operation App</h1>
+    </header>
+    <main>
+        <section>
+           
+            <div class="base">
+                <div class="derived"><h2>ADD STUDENT DATA</h2>
+                    <form class="border" id="addForm">
+                        <div>
+                            <label for="">STUDENT NAME</label>
+                            <input type="text" class="text_area" placeholder="Student name" id="StudentAddName" name="StudentAddName" value="" >
+                        </div>
+                        <div>
+                            <label for="">STUDENT AGE</label>
+                            <input type="number" class="text_area" placeholder="Student Age" id="StudentAddAge" name="StudentAddAge" value="">
+                        </div>
+                        <div> 
+                            <label for="">STUDENT EMAIL</label>
+                            <input type="text" class="text_area" placeholder="Student Email" id="StudentAddEmail" name="StudentAddEmail" value="">
+                        </div>
+                        <div>
+                            <label for="">STUDENT PHONE NO.</label>
+                            <input type="tel" class="text_area" placeholder="Student Phone no." placeholder="StudentPhoneno" id="StudentAddPhoneno" name="StudentAddPhoneno" value="">
+                       </div>
+                       <div>
+                        <label for="">STUDENT ADDRESS</label>
+                        <textarea  id="" rows="6" class="text_area" cols="22" placeholder="Student Address" id="StudentAddAddress" name="StudentAddAddress" value=""></textarea>
+
+                    </div>
+                        <button class="button">Submit</button>
+                    </form>
+            </div>a
+                <div class="derived"><h2>CONFIRM STUDENT DATA</h2>
+                <form class="border" id="editForm">
+                    <div>   
+                        <label for="">STUDENT NAME</label>
+                        <input type="text" class="text_area"  placeholder="Student name" id="StudentConfirmName" name="StudentConfirmName" value="">
+                    </div>
+                    <div>
+                        <label for="">STUDENT AGE</label>   
+                        <input type="number" class="text_area" placeholder="Student Age" id="StudentConfirmAge" name="StudentConfirmAge" value="">
+                    </div>
+                    <div> 
+                        <label for="">STUDENT EMAIL</label>
+                        <input type="text" class="text_area"  placeholder="Student Email"  id="StudentConfirmEmail" name="StudentConfirmEmail" value="">
+                    </div>
+                    <div>
+                        <label for="">STUDENT PHONE NO.</label>
+                        <input type="tel" class="text_area"   placeholder="Student Phone no." name="StudentConfirmPhoneno"id="StudentConfirmPhoneno" value="">
+                    </div>
+                    <div>
+                        <label for="">STUDENT ADDRESS</label>
+
+                    <textarea  rows="6" class="text_area" cols="22" placeholder="Student Address" id="StudentConfirmAddress" name="StudentAddAddress" value=""></textarea>
+                </div>
+                    <button class="button">Submit</button>
+                </form>
+                </div>
+                <div class="derived">
+                    <h2>VIEW STUDENT DATA</h2>
+                    <div class="studentTable"></div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
